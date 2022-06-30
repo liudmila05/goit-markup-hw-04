@@ -286,19 +286,15 @@ img {
 }
 
 .features-font {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
     height: 120px;
     margin-bottom: 30px;
 
     background: var(--light-font-color);
     border-radius: 4px;
-}
-
-.icon-features {
-    display: block;
-    margin: auto;
-    height: 100%;
 }
 
 /* services + team*/
@@ -384,7 +380,9 @@ img {
 }
 
 .team-social-link {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -392,9 +390,6 @@ img {
 }
 
 .svg-social-icon {
-    display: block;
-    margin: auto;
-    height: 100%;
     fill: var(--icon-socialy-color);
 }
 
@@ -435,20 +430,20 @@ img {
 }
 
 .client-icon {
-    display: block;
-    margin: auto;
-    height: 100%;
-
     fill: var(--icon-socialy-color);
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .client-link:hover,
 .client-link:focus,
 .client-link:active {
-    display: block;
-    box-sizing: border-box;
-    width: 170px;
-    height: 92px;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
 }
@@ -526,7 +521,7 @@ img {
 
 .footer .container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .logo-adress {
@@ -647,9 +642,15 @@ img {
     margin-bottom: 0;
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus,
-.portfolio-card:active {
+.portfolio-link {
+    display: block;
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus,
+.portfolio-link:active {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
